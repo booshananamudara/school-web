@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+  
+}
+.background{
+    background: url(../images/backgroun3.jpg);
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px);
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: #000000;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #bd1768;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.main-header{
+    text-align: center;
+    font-size:35px;
+    font-weight: bold;
+    padding-top:100px;
+}
+.text-center-header{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%);
+    width:75%;
+    height: 550px;
+    margin-top: 0;
+    /* background: url(backgroun3.jpg) no-repeat; */
+    background-position: center;
+    background-size:cover;
+    border-radius: 20px;
+    /* overflow: hidden;
+    
+     */
+}
+
+.contain{
+    width: 80%;
+    margin: 50px auto;
+}
+.contain h1,p{
+    text-align: center;
+    margin-top:20px;
+}
+.contain h1{
+    padding-top:20px;
+    color: #f90563;
+}
+.contain p{
+    color:rgba(0, 0, 0, 0.5);
+}
+.contactbox{
+    /* background: white ; */
+    display: flex;
+}
+.contact-left{
+    width: 60%;
+    background: white ;
+    padding: 20px 60px;
+}
+.contact-right{
+    width: 40%;
+    padding: 40px;
+    background: #b11551;
+    color: #fff;
+    border-radius: 10px;
+}
+.contact-right p{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact-right table{
+    margin-bottom: 40px;
+}
+.contact-right .social{
+    display: flex;  
+    text-align: center;  
+}
+.contact-right .social i{
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+.contain p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+.contact-left input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+.contact-left textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+.contact-left label{
+    margin-bottom: 6px;
+    display: block;
+    color: #f72d7a;
+}
+
+.buttons button{
+    background: #f72d7a;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(220, 8, 121, 0.3);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-left h3{
+    color: #f72d7a;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.contact-right h2{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 30px;
+}
+
+@media (max-width:1150px) {
+    .contain{
+        width: 100%;
+        margin: 10px auto;
+    }  
+    .contact-right{
+        width: 50%;
+    }
+    .contact-left{
+        width: 50%;
+    } 
+}
+@media (max-width:770px) {
+    .contactbox{
+        display: block;
+    }
+    .contact-right{
+        width: 100%;
+    }
+    .contact-left{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sussex College - Registration</title>
+    <link rel="stylesheet" href="../components/styles/register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onLoad="document.registration.userid.focus();">
+    <!-- NAVBAR CREATION -->
+   <header class="header">
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../models/registration.html">Register</a>
+        <a href="../models/login.html">Login</a>
+        <a href="../models/about.html">About</a>
+        <a href="../models/contact.html">Contact</a>
+    </nav>
+   
+   </header>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container">
+        <!-- <div class="item">
+            <div class="form-box register">
+
+            <form action="">
+
+                <h2>Sign Up</h2>
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-user'></i></span>
+                    <input type="text" required>
+                    <label >Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-envelope'></i></span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-password">
+                    <label for=""><input type="checkbox">I agree with this statment</label>
+                </div>
+                <button class="btn">Login In</button>
+                <div class="create-account">
+                    <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+                </div>
+            </form>
+                            
+        </div>
+        </div> -->
+        <div class="login-section">
+            <div class="form-box register">
+                <form name='registration' onSubmit="return formValidation();">
+
+                    <h2>Registration</h2><br>
+                    <div class="scrollbox">
+                        <div class="fields">
+                            <div class="input-box left">
+                                <span class="icon"><i class='bx bxs-id-card'></i></span>
+                                <input type="text" name="userid" required>
+                                <label for="userid" name="userid">User ID</label>
+                            </div>
+                            <div class="input-box right">
+                                <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                                <input type="password" name="passid" required>
+                                <label for="passid">Password</label>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="input-box left">
+                                <span class="icon"><i class='bx bxs-user'></i></span>
+                                <input type="text" name="username" required>
+                                <label for="username">Name</label>
+                            </div>
+                            <div class="input-box right">
+                                <span class="icon"><i class='bx bxs-location-plus'></i></span>
+                                <input type="text">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="input-box country left">
+                                <div>
+                                    <span>
+                                        <label for="country"></label>
+                                        <select name="country" id="country" required>
+                                            <option value="">Select a Country</option>
+                                            <option value="sl">Sri Lanka</option>
+                                            <option value="ind">India</option>
+                                            <option value="aus">Australia</option>
+                                            <option value="mal">Maldeives</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="input-box right">
+                                <span class="icon"><i class='bx bx-current-location'></i></span>
+                                <input type="number">
+                                <label >Zip Code</label>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="sex right">
+                                <p>Sex</p><br>
+                                <div class="gender preferences">
+                                    <div>
+                                        <input type="radio" name="msex" value="Male"/><span>Male</span>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="msex" value="Female"/><span>Female</span>
+                                    </div>   
+                                </div>                        
+                                <br><br>
+                            </div>
+                            <div class="input-box left">
+                                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                                <input type="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            
+                        </div>    
+                            
+                        <div class="left">
+                            <p><label for="mlang">Lanuage</label></p><br>
+                            <div class="preferences" required>
+                                <div>
+                                    <input type="checkbox" id="english" name="english" value="English">
+                                    <label for="english"> English</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="nenglish" name="nenglish" value="Non English">
+                                    <label for="nenglish"> Non English</label>
+                                </div>
+                                
+                            </div>
+                            
+                            <br><br>
+                        </div>
+                        <div>
+                            <textarea name="about" id="" cols="120" rows="10" placeholder="About"></textarea><br><br>
+                        </div>
+                        <div class="remember-password">
+                            <label for=""><input type="checkbox">I agree with this statment</label>
+                        </div>
+                        <button class="btn">Register</button>
+                        <div class="create-account">
+                            <p>Already Have An Account? <a href="../models/login.html" class="login-link">Log In</a></p>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- SIGN UP FORM CREATION -->
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

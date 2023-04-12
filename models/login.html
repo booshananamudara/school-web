@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sussex College - Login</title>
+    <link rel="stylesheet" href="../components/styles/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVBAR -->
+   <header class="header">
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="./registration.html">Register</a>
+        <a href="#">Login</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        
+    </nav>
+   
+   </header>
+    <!-- LOGIN FORM  -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo"><i class='bx bxl-xing'></i>Sussex College</h2>
+            <div class="text-item">
+                <h2>Welcome! <br><span>
+                    To Sussex College
+                </span></h2>
+                <p>This is the official web page of Sussex College.</p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="">
+                    <h2>Log In</h2>
+                    <br>
+                    <div class="input-box user-type">
+                        <!-- <div>User Type</div> -->
+                        <div>
+                            <span>
+                                <select name="utype" id="utype" required>
+                                    <option value="">User Type</option>
+                                    <option value="admin">Administrator</option>
+                                    <option value="std">Student</option>
+                                    <option value="tech">Teacher</option>
+                                    <option value="nst">Non Academic Staff</option>
+                                </select>
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button class="btn">Login</button>
+                    <div class="create-account">
+                        <p>Create A New Account? <a href="../models/registration.html" class="register-link">Register now</a></p>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+     <!-- login FORM -->
+
+</body>
+
+</html>
